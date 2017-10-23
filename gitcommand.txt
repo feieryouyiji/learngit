@@ -35,3 +35,5 @@ git checkout master  		 ## 切换到主分支
 git merge dev   //当前应该在主分支上,代表主分支master快速移动到dev上
 git branch -d dev  ## 删掉dev分支
 
+-----------------------------
+当主分支和dev分支都对同一个文件进行修改的时候,我们切到master分支下,然后git merge dev 会报出合并冲突,我们去找到那个冲突文件解决冲突,然后在master分支上 git add 冲突文件 ; git commit 冲突文件 -m "conflict fixed";最后删除dev分支
