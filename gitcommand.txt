@@ -16,3 +16,4 @@ git reset --hard "ea34578d5496d7dd233c827ed32a8cd576c5ee85"
 ------删除工作区的文件----------
 rm 1.txt -- 这个时候你确定需要从版本库中删除 1.txt 需要 git rm 1.txt 然后再 git commit -m "rm 1.txt"
 如果你不想从版本库中删除,那可以恢复 git checkout -- 1.txt 工作区中文件就会恢复
+// 当然你如果真的想删 可以直接git rm 1.txt
