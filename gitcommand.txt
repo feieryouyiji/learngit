@@ -1,0 +1,5 @@
+git diff 1.txt 			--代表工作区与暂存区文件差异
+git diff --cached 1.txt 	--代表暂存区与版本库中的差异
+git diff HEAD -- 2.txt		--代表工作区与版本库中的差异
+
+
