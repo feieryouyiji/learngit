@@ -17,3 +17,13 @@ git reset --hard "ea34578d5496d7dd233c827ed32a8cd576c5ee85"
 rm 1.txt -- 这个时候你确定需要从版本库中删除 1.txt 需要 git rm 1.txt 然后再 git commit -m "rm 1.txt"
 如果你不想从版本库中删除,那可以恢复 git checkout -- 1.txt 工作区中文件就会恢复
 // 当然你如果真的想删 可以直接git rm 1.txt
+
+-------
+-------
+
+git remote add origin https://github.com/feieryouyiji/learngit.git  #会将本地仓库关联到远程仓库
+
+git push -u origin master    # 将本地仓库的master分支中所有内容全部推送到远程仓库的master分支,并且自动关联远程仓库的master分支(因为-u这个参数)
+
+
+
