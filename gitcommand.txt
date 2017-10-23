@@ -33,4 +33,5 @@ git checkout master  		 ## 切换到主分支
 
 当在dev分支上改动了一些文件,并提交到了版本仓库,这个时候master仓库还没有,所以我们需要将master分支合并到dev分支
 git merge dev   //当前应该在主分支上,代表主分支master快速移动到dev上
+git branch -d dev  ## 删掉dev分支
 
