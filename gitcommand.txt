@@ -2,4 +2,13 @@ git diff 1.txt 			--代表工作区与暂存区文件差异
 git diff --cached 1.txt 	--代表暂存区与版本库中的差异
 git diff HEAD -- 2.txt		--代表工作区与版本库中的差异
 
+------工作区文件撤销----------
+git checkout -- 1.txt		--如果暂存区中的1.txt没有提交到版本库,那么工作区和暂存区一样,反之与版本库一样
 
+------staged暂存区文件撤销-----
+
+git reset -- HEAD 1.txt		--把暂存区的1.txt撤销重新放回工作区
+
+------整个撤销----------------
+
+git reset --hard "ea34578d5496d7dd233c827ed32a8cd576c5ee85"
